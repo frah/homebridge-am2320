@@ -4,7 +4,8 @@ var Service, Characteristic;
 module.exports = function(homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerPlatform("homebridge-am2320", "AM2320", AM2320Plugin);
+
+  homebridge.registerAccessory("homebridge-am2320", "AM2320", AM2320Plugin);
 }
 
 function AM2320Plugin(log, config) {
@@ -22,6 +23,7 @@ function AM2320Plugin(log, config) {
     .getCharacteristic(Characteristic.CurrentTemperature)
     .on('get', this.getCurrentTemperature.bind(this));
   this.humidityService = new Service.HumiditySensor(this.name);
+  this.humidityService
     .getCharacteristic(Characteristic.CurrentRelativeHumidity)
     .on('get', this.getCurrentRelativeHumidity.bind(this));
 }
