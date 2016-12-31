@@ -13,7 +13,7 @@ function AM2320Plugin(log, config) {
   this.name = config.name;
   this.options = config.options || {};
 
-  var address = config.options.address || 0x5c;
+  var address = parseInt(config.options.address) || 0x5c;
   var device = config.options.device || '/dev/i2c-1';
 
   this.sensor = new AM2320(address, device);
