@@ -1,0 +1,28 @@
+{
+  "name": "homebridge-am2320",
+  "version": "0.0.0",
+  "description": "AM2320 sensor service plugin for Homebridge: https://github.com/frah/homebridge-am2320",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frah/homebridge-am2320.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "am2320"
+  ],
+  "author": "frah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frah/homebridge-am2320/issues"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "homebridge": ">=0.2.0"
+  },
+  "homepage": "https://github.com/frah/homebridge-am2320#readme",
+  "dependencies": {
+    "am2320": "0.0.2"
+  }
+}
