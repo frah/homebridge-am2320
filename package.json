@@ -1,7 +1,7 @@
 {
   "name": "homebridge-am2320",
-  "version": "0.0.0",
-  "description": "AM2320 sensor service plugin for Homebridge: https://github.com/frah/homebridge-am2320",
+  "version": "0.0.2",
+  "description": "AM2320 sensor service plugin for Homebridge: https://github.com/nfarina/homebridge",
   "main": "index.js",
   "scripts": {},
   "repository": {
